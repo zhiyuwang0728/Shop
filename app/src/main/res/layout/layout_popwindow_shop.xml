@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white">
+
+    <ImageView
+        android:id="@+id/img_pop_detail"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_pop_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:src="@mipmap/icon_close"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pop_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_40"
+        android:text="价格：¥699"
+        android:textColor="#2C2B2B"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintLeft_toRightOf="@id/img_pop_detail"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pop_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="已选择：请选择规格数量"
+        android:textColor="#2C2B2B"
+        app:layout_constraintLeft_toLeftOf="@id/tv_pop_price"
+        app:layout_constraintTop_toBottomOf="@id/tv_pop_price" />
+
+    <TextView
+        android:id="@+id/tv_pop_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="数量"
+        android:textColor="#2C2B2B"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_pop_detail" />
+
+    <com.zyw.myshop.common.CartCustomPopView
+        android:id="@+id/cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+     android:layout_marginTop="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/tv_pop_num">
+
+        <include layout="@layout/layout_custom_cart" />
+    </com.zyw.myshop.common.CartCustomPopView>
+</androidx.constraintlayout.widget.ConstraintLayout>

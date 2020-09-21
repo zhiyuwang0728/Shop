@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    tools:context=".ui.shopcart.activitys.AddressActivity">
+
+    <include
+        android:id="@+id/tool"
+        layout="@layout/layout_tool" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/bg_white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:rotation="180"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新建联系人"
+            android:textColor="#000"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/tv_remeber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="保存" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/bg_white">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="收货人:"
+            android:textSize="@dimen/sp_15" />
+
+        <EditText
+            android:id="@+id/et_people"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toRightOf="@id/tv_1"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:gravity="right"
+            android:text="123"
+            android:textColor="#858383"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/sp_15" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/bg_white">
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="手机号码:"
+            android:textSize="@dimen/sp_15" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toRightOf="@id/tv_2"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:gravity="right"
+            android:textColor="#858383"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/sp_15" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/bg_white">
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="所在区域:"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toRightOf="@id/tv_3"
+            android:gravity="right"
+            android:text="请选择区域"
+            android:textColor="#858383"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/sp_15" />
+    </RelativeLayout>
+
+
+</LinearLayout>
